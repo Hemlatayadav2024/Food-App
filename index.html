@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="img" src="image1.png" alt="Food logo">
+            <h1>TheMealDB</h1>
+            <ul>
+                <li><a href="#" class="button" onclick="navigatetohome()">Home</a></li>
+                <li><a href="#" class="button">Lower Price</a></li>
+                <li><a href="#" class="button">Higher Price</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-section">
+        <h1 class="welcome">Welcome to TheMealDB</h1>
+        <div class="image-container">
+            <img src="image1.png" id="bowl1" alt="Image 1">
+            <p class="para">
+                Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.<br>
+                We also offer a free recipe API for anyone wanting to use it, with additional features for subscribers.
+            </p>
+            <img src="image1.png" id="bowl2" alt="Image 2">
+        </div>
+
+        <input type="text" placeholder="Upgrade with PayPal" id="place">
+        <p class="para2">
+            Click the button above to upgrade the free Recipe API to premium.<br>
+            $3 a month and cancel anytime. Currently 54 supporters.
+        </p>
+        <hr>
+
+        <div class="search-icon">
+            <input type="text" placeholder="Search for a Meal..." id="search">
+            <div class="i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <p id="meals">Total Meals: 303 | Total Ingredients: 575 | Images: 303</p>
+            <hr>
+            <p id="line">Latest Meals</p>
+        </div>
+
+        <div id="secondmainsection">
+            <!-- Display all data dynamically -->
+        </div>
+    </div>
+
+    <!-- *************************Rating************************************* -->
+
+    <footer>
+        <div id="line3"></div>
+        <h2 id="footer-heading">Random Ingredient</h2>
+        <div id="img-container">
+            <div id="img1">
+                <img src="https://www.themealdb.com/images/ingredients/Chicken.png" alt="Chicken ingredient">
+                <p>Chicken</p>
+            </div>
+            <div id="img2">
+                <img src="https://www.themealdb.com/images/ingredients/Sage.png" alt="Sage ingredient">
+            </div>
+            <div id="img3">
+                <img src="https://www.themealdb.com/images/media/meals/wxswxy1511452625.jpg" alt="Meal example">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
